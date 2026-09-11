@@ -648,7 +648,82 @@
         </div>
     </div>
 
-    <!-- Contact & Donation Modal -->
+    <!-- Contact Us Modal -->
+    <div id="contact-info-overlay" class="modal-overlay flex items-center justify-center p-4 min-h-screen opacity-0 invisible">
+        <div class="max-w-xl w-full glass-card rounded-2xl md:rounded-3xl p-6 sm:p-8 relative my-auto border-t-4 border-brandPrimary shadow-2xl">
+            <button onclick="toggleContactInfo()" class="absolute top-4 right-4 text-zinc-400 hover:text-brandAccent transition-colors p-2 rounded-full hover:bg-zinc-100" aria-label="Close modal">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            
+            <div class="text-center mb-6 mt-2">
+                <div class="h-12 w-12 bg-brandPrimary/10 text-brandPrimary rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i class="fas fa-address-book text-xl"></i>
+                </div>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold text-zinc-900 mb-1">Contact Us</h2>
+                <p class="text-zinc-500 text-xs tracking-widest uppercase font-semibold">Get in Touch with Hope Giver Foundation</p>
+                <div class="h-1 w-16 bg-brandAccent mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="space-y-3.5">
+                <!-- Mobile Phone -->
+                <a href="tel:+923707152654" class="glass-card p-4 rounded-xl flex items-center space-x-4 border border-zinc-200/60 hover:border-brandAccent transition-all group">
+                    <div class="h-10 w-10 rounded-lg bg-brandPrimary/10 text-brandPrimary flex items-center justify-center text-lg group-hover:bg-brandAccent group-hover:text-white transition-colors">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                        <p class="text-zinc-400 text-[10px] font-bold uppercase tracking-widest">Mobile Number</p>
+                        <p class="text-sm font-bold text-zinc-800 group-hover:text-brandAccent transition-colors">+92 370 7152654</p>
+                    </div>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/923707152654" target="_blank" rel="noopener noreferrer" class="glass-card p-4 rounded-xl flex items-center space-x-4 border border-zinc-200/60 hover:border-emerald-500 transition-all group">
+                    <div class="h-10 w-10 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-lg group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <p class="text-zinc-400 text-[10px] font-bold uppercase tracking-widest">WhatsApp</p>
+                        <p class="text-sm font-bold text-zinc-800 group-hover:text-emerald-600 transition-colors">+92 370 7152654</p>
+                    </div>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:irfan@hopegiverfoundationpakistan.org" class="glass-card p-4 rounded-xl flex items-center space-x-4 border border-zinc-200/60 hover:border-brandAccent transition-all group">
+                    <div class="h-10 w-10 rounded-lg bg-orange-500/10 text-brandAccent flex items-center justify-center text-lg group-hover:bg-brandAccent group-hover:text-white transition-colors">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="overflow-hidden">
+                        <p class="text-zinc-400 text-[10px] font-bold uppercase tracking-widest">Official Email</p>
+                        <p class="text-xs sm:text-sm font-bold text-zinc-800 truncate group-hover:text-brandAccent transition-colors">irfan@hopegiverfoundationpakistan.org</p>
+                    </div>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/people/Hope-Giver-Foundation-Outreach-Ministries/61583204244598/" target="_blank" rel="noopener noreferrer" class="glass-card p-4 rounded-xl flex items-center space-x-4 border border-zinc-200/60 hover:border-blue-600 transition-all group">
+                    <div class="h-10 w-10 rounded-lg bg-blue-500/10 text-blue-600 flex items-center justify-center text-lg group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div>
+                        <p class="text-zinc-400 text-[10px] font-bold uppercase tracking-widest">Facebook Page</p>
+                        <p class="text-xs sm:text-sm font-bold text-zinc-800 group-hover:text-blue-600 transition-colors">Hope Giver Foundation Outreach Ministries</p>
+                    </div>
+                </a>
+
+                <!-- Location -->
+                <a href="https://www.google.com/maps/place/Hope+Giver+School+%26+Foundation/@31.4079581,74.37546,17z/data=!3m1!4b1!4m6!3m5!1s0x3919076312818809:0x5f856b219456f5f9!8m2!3d31.4079581!4d74.37546!16s%2Fg%2F11zhzdm89m?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="glass-card p-4 rounded-xl flex items-center space-x-4 border border-zinc-200/60 hover:border-red-500 transition-all group">
+                    <div class="h-10 w-10 rounded-lg bg-red-500/10 text-red-500 flex items-center justify-center text-lg group-hover:bg-red-500 group-hover:text-white transition-colors">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <p class="text-zinc-400 text-[10px] font-bold uppercase tracking-widest">Our Location</p>
+                        <p class="text-xs sm:text-sm font-bold text-zinc-800 group-hover:text-red-500 transition-colors">Hope Giver School & Foundation, Lahore, Pakistan</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Donation Modal -->
     <div id="contact-overlay" class="modal-overlay flex items-center justify-center p-4 min-h-screen opacity-0 invisible">
         <div class="max-w-5xl w-full glass-card rounded-2xl md:rounded-3xl p-5 sm:p-8 md:p-10 relative my-auto max-h-[90vh] overflow-y-auto">
             <button onclick="toggleContact()" class="absolute top-4 right-4 sm:top-6 sm:right-6 text-zinc-400 hover:text-brandAccent transition-colors p-2 rounded-full hover:bg-zinc-100" aria-label="Close modal">
@@ -656,7 +731,7 @@
             </button>
             
             <div class="text-center mb-6 mt-2">
-                <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-zinc-900 mb-2">Contact Us</h2>
+                <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-zinc-900 mb-2">Donate Now</h2>
                 <p class="text-zinc-500 text-xs sm:text-sm tracking-widest uppercase font-semibold">"Each of you should give what you have decided in your heart to give."</p>
                 <div class="h-1 w-16 bg-brandAccent mx-auto rounded-full mt-3"></div>
             </div>
@@ -830,6 +905,7 @@
                 <a href="#impact" class="nav-link-effect hover:text-brandAccent transition-colors">Our Impact</a>
                 <a href="#portal" class="nav-link-effect hover:text-brandAccent transition-colors">Gallery</a>
                 <a href="#faq" class="nav-link-effect hover:text-brandAccent transition-colors">FAQ</a>
+                <button onclick="toggleContactInfo()" class="nav-link-effect hover:text-brandAccent transition-colors uppercase cursor-pointer">Contact Us</button>
             </div>
 
             <div class="flex items-center space-x-2.5">
@@ -847,7 +923,8 @@
                 <a href="#mission" onclick="toggleMobileMenu()" class="py-2 hover:text-brandAccent transition-colors block border-b border-zinc-100">Services</a>
                 <a href="#impact" onclick="toggleMobileMenu()" class="py-2 hover:text-brandAccent transition-colors block border-b border-zinc-100">Our Impact</a>
                 <a href="#portal" onclick="toggleMobileMenu()" class="py-2 hover:text-brandAccent transition-colors block border-b border-zinc-100">Gallery</a>
-                <a href="#faq" onclick="toggleMobileMenu()" class="py-2 hover:text-brandAccent transition-colors block">FAQ</a>
+                <a href="#faq" onclick="toggleMobileMenu()" class="py-2 hover:text-brandAccent transition-colors block border-b border-zinc-100">FAQ</a>
+                <button onclick="toggleMobileMenu(); toggleContactInfo();" class="py-2 text-brandAccent hover:text-brandAccent transition-colors block w-full">Contact Us</button>
             </div>
         </div>
     </nav>
@@ -870,7 +947,7 @@
                 </p>
                 <div class="flex flex-wrap gap-3 justify-center lg:justify-start pt-1">
                     <a href="#mission" class="inline-block text-center bg-brandPrimary text-white px-6 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest hover:bg-brandAccent transition-all shadow-lg btn-premium">Our Services</a>
-                    <button onclick="toggleContact()" class="glass-card px-6 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest text-zinc-800 hover:bg-zinc-100 transition-all">Contact Us</button>
+                    <button onclick="toggleContactInfo()" class="glass-card px-6 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest text-zinc-800 hover:bg-zinc-100 transition-all">Contact Us</button>
                 </div>
             </div>
 
@@ -1285,7 +1362,7 @@
 
                 <div class="flex flex-wrap justify-center items-center gap-4 text-xs text-zinc-400 font-semibold uppercase tracking-wider">
                     <button onclick="togglePrivacy()" class="hover:text-brandAccent transition-colors">Privacy Policy</button>
-                    <a href="tel:+923707152654" class="hover:text-brandAccent transition-colors">Contact</a>
+                    <button onclick="toggleContactInfo()" class="hover:text-brandAccent transition-colors uppercase">Contact</button>
                     <a href="#" onclick="toggleSignInModal(); return false;" class="hover:text-brandAccent transition-colors text-[10px] text-zinc-600"><i class="fas fa-lock mr-1"></i> Admin Access</a>
                 </div>
 
@@ -1445,71 +1522,77 @@
             document.getElementById(`box-${boxId}-title`).innerText = newTitle;
             document.getElementById(`box-${boxId}-img`).src = newImg;
 
-            if (typeof database !== 'undefined') {
-                database.ref('gallery/box_' + boxId).set({
+            if (database) {
+                database.ref('gallery/' + boxId).set({
                     title: newTitle,
-                    imageUrl: newImg
+                    image: newImg
                 });
             }
 
             closeEditModal();
-            alert("Box content updated successfully!");
         }
 
-        if (typeof database !== 'undefined') {
-            for (let i = 1; i <= 6; i++) {
-                database.ref('gallery/box_' + i).on('value', (snapshot) => {
-                    const data = snapshot.val();
-                    if (data) {
-                        if (data.title) document.getElementById(`box-${i}-title`).innerText = data.title;
-                        if (data.imageUrl) document.getElementById(`box-${i}-img`).src = data.imageUrl;
-                    }
-                });
+        /* Toggle Contact Us Info Modal */
+        function toggleContactInfo() {
+            const modal = document.getElementById('contact-info-overlay');
+            if (modal.classList.contains('opacity-0')) {
+                modal.classList.remove('invisible', 'opacity-0');
+                modal.classList.add('opacity-100');
+                document.body.style.overflow = 'hidden';
+            } else {
+                modal.classList.remove('opacity-100');
+                modal.classList.add('opacity-0');
+                setTimeout(() => { modal.classList.add('invisible'); }, 300);
+                document.body.style.overflow = 'auto';
             }
         }
 
+        /* Toggle Donation Modal */
         function toggleContact() {
-            const overlay = document.getElementById('contact-overlay');
-            if (overlay.classList.contains('opacity-0')) {
-                overlay.classList.remove('invisible', 'opacity-0');
-                overlay.classList.add('opacity-100');
+            const modal = document.getElementById('contact-overlay');
+            if (modal.classList.contains('opacity-0')) {
+                modal.classList.remove('invisible', 'opacity-0');
+                modal.classList.add('opacity-100');
                 document.body.style.overflow = 'hidden';
             } else {
-                overlay.classList.remove('opacity-100');
-                overlay.classList.add('opacity-0');
-                setTimeout(() => { overlay.classList.add('invisible'); }, 300);
+                modal.classList.remove('opacity-100');
+                modal.classList.add('opacity-0');
+                setTimeout(() => { modal.classList.add('invisible'); }, 300);
                 document.body.style.overflow = 'auto';
             }
         }
 
+        /* Toggle Upcoming Programs Modal */
         function toggleUpcoming() {
-            const overlay = document.getElementById('upcoming-overlay');
-            if (overlay.classList.contains('opacity-0')) {
-                overlay.classList.remove('invisible', 'opacity-0');
-                overlay.classList.add('opacity-100');
+            const modal = document.getElementById('upcoming-overlay');
+            if (modal.classList.contains('opacity-0')) {
+                modal.classList.remove('invisible', 'opacity-0');
+                modal.classList.add('opacity-100');
                 document.body.style.overflow = 'hidden';
             } else {
-                overlay.classList.remove('opacity-100');
-                overlay.classList.add('opacity-0');
-                setTimeout(() => { overlay.classList.add('invisible'); }, 300);
+                modal.classList.remove('opacity-100');
+                modal.classList.add('opacity-0');
+                setTimeout(() => { modal.classList.add('invisible'); }, 300);
                 document.body.style.overflow = 'auto';
             }
         }
 
+        /* Toggle Privacy Modal */
         function togglePrivacy() {
-            const overlay = document.getElementById('privacy-overlay');
-            if (overlay.classList.contains('opacity-0')) {
-                overlay.classList.remove('invisible', 'opacity-0');
-                overlay.classList.add('opacity-100');
+            const modal = document.getElementById('privacy-overlay');
+            if (modal.classList.contains('opacity-0')) {
+                modal.classList.remove('invisible', 'opacity-0');
+                modal.classList.add('opacity-100');
                 document.body.style.overflow = 'hidden';
             } else {
-                overlay.classList.remove('opacity-100');
-                overlay.classList.add('opacity-0');
-                setTimeout(() => { overlay.classList.add('invisible'); }, 300);
+                modal.classList.remove('opacity-100');
+                modal.classList.add('opacity-0');
+                setTimeout(() => { modal.classList.add('invisible'); }, 300);
                 document.body.style.overflow = 'auto';
             }
         }
 
+        /* Toggle Mobile Nav Dropdown */
         function toggleMobileMenu() {
             const dropdown = document.getElementById('mobile-menu-dropdown');
             const icon = document.getElementById('mobile-menu-icon');
@@ -1526,42 +1609,11 @@
             }
         }
 
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
-            const status = document.getElementById('form-status');
-            const btn = document.getElementById('submit-btn');
-
-            btn.innerText = "Sending...";
-            btn.disabled = true;
-
-            fetch(form.action, {
-                method: form.method,
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-            }).then(response => {
-                if (response.ok) {
-                    status.classList.remove('hidden');
-                    form.reset();
-                    btn.innerText = "Submit Details";
-                    btn.disabled = false;
-                    setTimeout(() => status.classList.add('hidden'), 5000);
-                } else {
-                    alert("Submission error. Please contact directly via WhatsApp or phone.");
-                    btn.innerText = "Submit Details";
-                    btn.disabled = false;
-                }
-            }).catch(error => {
-                alert("Submission error. Please contact directly via WhatsApp or phone.");
-                btn.innerText = "Submit Details";
-                btn.disabled = false;
-            });
-        }
-
-        function filterGallery(evt, category) {
+        /* Filter Gallery Logic */
+        function filterGallery(event, category) {
             const buttons = document.querySelectorAll('.gallery-tab-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
-            if(evt && evt.target) evt.target.classList.add('active');
+            event.currentTarget.classList.add('active');
 
             const items = document.querySelectorAll('.gallery-item');
             items.forEach(item => {
@@ -1573,130 +1625,60 @@
             });
         }
 
-        /* Scroll Bar Indicator */
-        window.onscroll = function() {
-            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            let scrolled = (winScroll / height) * 100;
-            const scrollBar = document.getElementById("scroll-progress");
-            if (scrollBar) scrollBar.style.width = scrolled + "%";
+        /* Form Submission Handler */
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+            const status = document.getElementById('form-status');
+            btn.innerText = 'Submitting...';
+            btn.disabled = true;
 
-            const navbar = document.getElementById("navbar");
-            if (navbar) {
-                if (winScroll > 50) {
-                    navbar.classList.add("py-1");
-                    navbar.classList.remove("py-2.5");
-                } else {
-                    navbar.classList.add("py-2.5");
-                    navbar.classList.remove("py-1");
-                }
-            }
-        };
+            setTimeout(() => {
+                btn.innerText = 'Submit Details';
+                btn.disabled = false;
+                status.classList.remove('hidden');
+                document.getElementById('donation-form').reset();
+            }, 1200);
+        }
 
-        /* Stat Counter Animation */
-        const counters = document.querySelectorAll('.counter');
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    const target = +entry.target.getAttribute('data-target');
-                    let count = 0;
-                    const update = () => {
-                        count += target / 80;
-                        if(count < target) {
-                            entry.target.innerText = Math.ceil(count) + "+";
-                            setTimeout(update, 20);
-                        } else {
-                            entry.target.innerText = target + "+";
-                        }
-                    }
-                    update();
-                    counterObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-        counters.forEach(c => counterObserver.observe(c));
-
-        document.querySelectorAll('.service-bg-card').forEach(card => {
-            const bgImg = card.style.getPropertyValue('--services-img');
-            if(bgImg) {
-                const uniqueId = 'cls-' + Math.random().toString(36).substr(2, 9);
-                card.classList.add(uniqueId);
-                const style = document.createElement('style');
-                style.innerHTML = `.${uniqueId}::before { background-image: ${bgImg}; }`;
-                document.head.appendChild(style);
-            }
+        /* Scroll Progress Bar & Counter Animation */
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('scroll-progress').style.width = scrolled + '%';
         });
 
-        /* Background Canvas Particle System */
-        const canvas = document.getElementById('fractal-canvas');
-        if (canvas) {
-            const ctx = canvas.getContext('2d');
-            let particles = [];
+        /* Animated Counters */
+        const counters = document.querySelectorAll('.counter');
+        let animated = false;
 
-            function initCanvas() {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-                particles = [];
-                for (let i = 0; i < 40; i++) {
-                    particles.push({
-                        x: Math.random() * canvas.width,
-                        y: Math.random() * canvas.height,
-                        size: Math.random() * 2 + 1,
-                        speedX: Math.random() * 0.4 - 0.2,
-                        speedY: Math.random() * 0.4 - 0.2,
-                        opacity: Math.random() * 0.5 + 0.1
-                    });
-                }
+        window.addEventListener('scroll', () => {
+            const impactSection = document.getElementById('impact');
+            if (!impactSection) return;
+            const pos = impactSection.getBoundingClientRect();
+            
+            if (pos.top < window.innerHeight && !animated) {
+                animated = true;
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    const duration = 2000;
+                    const step = target / (duration / 16);
+                    let current = 0;
+
+                    const updateCounter = () => {
+                        current += step;
+                        if (current < target) {
+                            counter.innerText = Math.ceil(current);
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.innerText = target + '+';
+                        }
+                    };
+                    updateCounter();
+                });
             }
-
-            function animateCanvas() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                particles.forEach(p => {
-                    p.x += p.speedX;
-                    p.y += p.speedY;
-
-                    if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
-                    if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
-
-                    ctx.fillStyle = `rgba(44, 94, 59, ${p.opacity})`;
-                    ctx.beginPath();
-                    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-                    ctx.fill();
-                });
-                requestAnimationFrame(animateCanvas);
-            }
-
-            initCanvas(); 
-            animateCanvas();
-            window.addEventListener('resize', initCanvas);
-        }
-
-        /* 3D Mouse Parallax Effect for Desktop Only */
-        if (window.innerWidth > 1024 && !('ontouchstart' in window)) {
-            document.addEventListener('mousemove', (e) => {
-                const cards = document.querySelectorAll('.tilt-card');
-                const mouseX = e.clientX;
-                const mouseY = e.clientY;
-
-                cards.forEach(card => {
-                    const rect = card.getBoundingClientRect();
-                    const cardX = rect.left + rect.width / 2;
-                    const cardY = rect.top + rect.height / 2;
-
-                    const angleX = Math.min(Math.max((cardY - mouseY) / 35, -8), 8);
-                    const angleY = Math.min(Math.max((mouseX - cardX) / 35, -8), 8);
-
-                    card.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.01)`;
-                });
-            });
-
-            document.addEventListener('mouseleave', () => {
-                const cards = document.querySelectorAll('.tilt-card');
-                cards.forEach(card => {
-                    card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
-                });
-            });
-        }
+        });
     </script>
 </body>
 </html>
